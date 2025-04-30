@@ -2,13 +2,12 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background: url('background.jpg') no-repeat center center fixed;
-    background-size: cover;
+    background-color: #f4f4f4;
     color: #333;
 }
 
 header {
-    background-color: rgba(0, 0, 0, 0.7);
+    background-color: #333;
     color: #fff;
     padding: 1rem;
     text-align: center;
@@ -35,9 +34,6 @@ nav ul li a {
 
 main {
     padding: 2rem;
-    background-color: rgba(255, 255, 255, 0.8);
-    margin: 2rem;
-    border-radius: 8px;
 }
 
 section {
@@ -69,7 +65,7 @@ form button {
 }
 
 footer {
-    background-color: rgba(0, 0, 0, 0.7);
+    background-color: #333;
     color: #fff;
     text-align: center;
     padding: 1rem;
