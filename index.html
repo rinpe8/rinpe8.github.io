@@ -1,71 +1,76 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>山田太郎 | Webデザイナー</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>山田太郎のポートフォリオ</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-    <header>
-        <div class="navbar">
-            <h1 class="logo">Yamada Taro</h1>
-            <nav>
-                <ul>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#portfolio">Portfolio</a></li>
-                    <li><a href="#skills">Skills</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </nav>
+  <header>
+    <div class="navbar">
+      <h1 class="logo">Yamada Taro</h1>
+      <nav>
+        <ul>
+          <li><a href="#about">わたしについて</a></li>
+          <li><a href="#portfolio">作品</a></li>
+          <li><a href="#skills">スキル</a></li>
+          <li><a href="#contact">お問い合わせ</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section id="about" class="section">
+      <h2>こんにちは！</h2>
+      <p>
+        山田太郎と申します。Webデザインとコーディングが大好きで、
+        「見やすく・使いやすく・ちょっとおしゃれ」なサイトづくりを心がけています。
+        東京を拠点に、フリーランスで活動中です。
+      </p>
+    </section>
+
+    <section id="portfolio" class="section">
+      <h2>これまでの作品たち</h2>
+      <div class="portfolio-grid">
+        <div class="portfolio-item">
+          <img src="https://via.placeholder.com/300x200" alt="Project 1" />
+          <h3>カフェのLP</h3>
+          <p>やわらかいトーンで、お店の雰囲気を伝えるランディングページです。</p>
         </div>
-    </header>
+        <div class="portfolio-item">
+          <img src="https://via.placeholder.com/300x200" alt="Project 2" />
+          <h3>ポートフォリオサイト</h3>
+          <p>デザインもコードも、自分でつくりました！</p>
+        </div>
+        <div class="portfolio-item">
+          <img src="https://via.placeholder.com/300x200" alt="Project 3" />
+          <h3>ネットショップ構築</h3>
+          <p>ユーザーが迷わないレイアウトを意識しました。</p>
+        </div>
+      </div>
+    </section>
 
-    <main class="container">
-        <section id="about" class="section">
-            <h2>自己紹介</h2>
-            <p>東京都在住のWebデザイナー。洗練されたUIと機能性を兼ね備えたWebサイト制作を得意としています。コーポレートサイトからECサイト、LP制作まで幅広く対応しています。</p>
-        </section>
+    <section id="skills" class="section">
+      <h2>できること</h2>
+      <ul>
+        <li>HTML / CSS / JavaScript</li>
+        <li>Figma・Photoshop でのデザイン</li>
+        <li>React・Vue などのJSフレームワーク</li>
+        <li>WordPress・Shopify のカスタマイズ</li>
+      </ul>
+    </section>
 
-        <section id="portfolio" class="section">
-            <h2>ポートフォリオ</h2>
-            <div class="portfolio-grid">
-                <div class="portfolio-item">
-                    <img src="https://via.placeholder.com/300x200" alt="Project 1">
-                    <h3>企業サイトデザイン</h3>
-                    <p>シンプルで信頼感のあるコーポレートサイト。</p>
-                </div>
-                <div class="portfolio-item">
-                    <img src="https://via.placeholder.com/300x200" alt="Project 2">
-                    <h3>飲食店LP</h3>
-                    <p>店舗集客に特化したランディングページ。</p>
-                </div>
-                <div class="portfolio-item">
-                    <img src="https://via.placeholder.com/300x200" alt="Project 3">
-                    <h3>ECサイト構築</h3>
-                    <p>ユーザー目線で構築されたショッピング体験。</p>
-                </div>
-            </div>
-        </section>
-
-        <section id="skills" class="section">
-            <h2>スキル</h2>
-            <ul>
-                <li>HTML / CSS / JavaScript</li>
-                <li>React / Vue / jQuery</li>
-                <li>Figma / Adobe XD / Photoshop</li>
-                <li>WordPress / Shopify</li>
-            </ul>
-        </section>
-
-        <section id="contact" class="section">
-            <h2>お問い合わせ</h2>
-            <p>Email: <a href="mailto:your.email@example.com">your.email@example.com</a></p>
-            <p>
-                <a href="#" target="_blank">GitHub</a> |
-                <a href="#" target="_blank">LinkedIn</a>
-            </p>
-        </section>
-    </main>
+    <section id="contact" class="section">
+      <h2>お気軽にご連絡ください📩</h2>
+      <p>お仕事のご相談や「ちょっと話してみたい」でもOKです。</p>
+      <p>Email: <a href="mailto:your.email@example.com">your.email@example.com</a></p>
+      <p>
+        <a href="#" target="_blank">GitHub</a> |
+        <a href="#" target="_blank">LinkedIn</a>
+      </p>
+    </section>
+  </main>
 </body>
 </html>
