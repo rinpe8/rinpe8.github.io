@@ -1,32 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&family=Quicksand:wght@500&display=swap');
+
 body {
-    font-family: 'Segoe UI', sans-serif;
+    font-family: 'Quicksand', 'Segoe UI', sans-serif;
+    background: linear-gradient(135deg, #fefefe, #e7f6fd);
     color: #333;
-    line-height: 1.8;
     min-height: 100vh;
-    background: linear-gradient(135deg, #f9f9f9, #e6ecf0);
     background-attachment: fixed;
     background-size: cover;
+    line-height: 1.8;
 }
 
-/* コンテナ全体（半透明ホワイト + 影） */
-.container {
-    max-width: 1000px;
-    margin: 40px auto;
-    padding: 30px 20px;
-    background-color: rgba(255, 255, 255, 0.8);
-    border-radius: 12px;
-    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(4px);
-}
-
-/* ヘッダー・見出し */
-h1, h2 {
-    color: #222;
-}
-
-/* ナビゲーションバー */
+/* ヘッダー */
 header {
-    background-color: rgba(255, 255, 255, 0.95);
+    background: #ffffffcc;
     padding: 20px 40px;
     box-shadow: 0 2px 8px rgba(0,0,0,0.05);
     position: sticky;
@@ -34,32 +20,78 @@ header {
     z-index: 10;
 }
 
-/* リンクカラー（淡いブルー系） */
-a {
-    color: #007acc;
+.logo {
+    font-family: 'Nunito', sans-serif;
+    font-size: 1.6rem;
+    color: #ff4081;
+    font-weight: bold;
+}
+
+/* ナビゲーション */
+nav a {
+    color: #444;
     text-decoration: none;
+    padding: 8px 12px;
+    border-radius: 6px;
+    transition: background 0.3s;
 }
 
-a:hover {
-    text-decoration: underline;
+nav a:hover {
+    background: #ffecf2;
+    color: #ff4081;
 }
 
-/* ポートフォリオカード（明るめデザイン） */
+/* コンテナ */
+.container {
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 30px 20px;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 14px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.05);
+    backdrop-filter: blur(4px);
+}
+
+/* 見出し */
+h2 {
+    font-size: 1.8rem;
+    border-left: 6px solid #ffd166;
+    padding-left: 12px;
+    color: #222;
+    margin-bottom: 20px;
+}
+
+/* ポートフォリオカード */
+.portfolio-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+}
+
 .portfolio-item {
     background-color: #ffffff;
-    border-radius: 8px;
+    border-radius: 10px;
     padding: 15px;
-    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.06);
     transition: transform 0.3s, box-shadow 0.3s;
 }
 
 .portfolio-item:hover {
     transform: translateY(-5px);
-    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 10px 25px rgba(255, 64, 129, 0.15);
 }
 
 .portfolio-item img {
     width: 100%;
     border-radius: 6px;
     margin-bottom: 10px;
+}
+
+a {
+    color: #ff4081;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
 }
